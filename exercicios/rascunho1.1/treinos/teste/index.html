@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        div {
+            background-color: antiquewhite;
+            display: inline-block;
+            height: auto;
+            width: 200px;
+            /*
+            border:2px solid black;
+            outline: 2px solid green;
+            */
+            outline: 2px solid green;
+            padding: 10px;
+            margin: 10px;
+            text-indent: 15px; 
+        }
+        div:hover {
+            background-color: aquamarine;
+        }
+        div > p {
+            display: none;
+        }
+        div#especial:hover > p {
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium molestias. Rerum, numquam, nulla labore delectus quisquam ipsam omnis recusandae commodi at dicta vitae dolor corrupti cumque, illo obcaecati impedit. lor
+    </div> 
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium molestias. Rerum, numquam, nulla labore delectus quisquam ipsam omnis recusandae commodi at dicta vitae dolor corrupti cumque, illo obcaecati impedit.</div>
+    <div id="especial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium molestias. Rerum, numquam, nulla labore delectus quisquam ipsam omnis recusandae commodi at dicta vitae dolor corrupti cumque, illo obcaecati impedit.
+        <p>TEXTO ESCONDIDO OTARO</p>
+    </div>   
+</body>
+</html>
