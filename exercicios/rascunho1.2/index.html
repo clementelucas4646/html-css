@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            width: 100px;
+            height: 25px;
+            padding: 5px;
+            text-align: center;
+        } 
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        td{
+            text-align: left;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table> -->
+
+    <table>
+        <caption>População dos estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">100.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">70.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">90.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td>xxxxxxxx</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p style="font-size: 3em;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil mollitia earum fugiat esse, possimus facere in corrupti deserunt adipisci natus assumenda. Necessitatibus, minus minima aspernatur doloremque voluptatem laboriosam commodi dolorem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur, quia officia minima ut optio sint! Rerum modi corrupti necessitatibus perferendis consequatur alias perspiciatis, eum magnam corporis possimus tempore molestias!
+    </p>
+
+    <table>
+        <tr>
+            <td colspan="2">A</td>
+            <td>B</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+</html>
